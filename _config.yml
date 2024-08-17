@@ -1,0 +1,123 @@
+### Site Settings ###
+title: Kaal Harir
+description: >-
+  Versatile full-stack developer with expertise 
+  in front-end and back-end technologies. <br/><br/>
+
+  Software engineering related Research
+# baseurl: "https://kaal.github.io" # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+# # repository: kaalharir/kaal80.github.io # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+# repository: https://kaal.github.io
+baseurl:
+repository:
+remote_theme: YoussefRaafatNasry/portfolYOU
+
+### Plugins ###
+plugins:
+  - jemoji
+
+### Navbar Settings ###
+nav_exclude: # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+  - pages/blog.md
+  # - documentation/partials/**                           # For Documentation Only
+### Navbar Settings ###
+navbar:
+  - title: "About Me"
+    url: "pages/about/"
+    weight: 1
+  - title: "Education"
+    url: "pages/education/"
+    weight: 2
+  - title: "Work"
+    url: "pages/work/"
+    weight: 3
+  - title: "Research"
+    url: "pages/research/"
+    weight: 4
+  - title: "Projects"
+    url: "pages/projects/"
+    weight: 5
+  - title: "Activities & Awards"
+    url: "pages/acts/"
+    weight: 6
+
+### Author Info ###
+author:
+  name: Kaal Harir Abdulle
+  image: "/images/Kaal Harir_TVE_IUT.jpg"
+  # behance           : your_username
+  # dribbble          : your_username
+  email: kaalharir@iut-dhaka.edu
+  github: kaalharir
+  linkedin: https://www.linkedin.com/in/kaal-harir-9443471a6/
+  # gitlab            : your_username
+  # instagram         : your_username
+  # kaggle            : your_username
+  facebook: kaalyare
+  # medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+# twitter           : your_username
+# vimeo             : your_username
+# youtube           : your_channel_name
+# keybase           : your_username
+
+### Posts ###
+# permalink: /blog/:title
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  acts:
+    output: true
+    permalink: /acts/:name
+  elements: # For Documentation Only
+    output: true # For Documentation Only
+
+### Disqus ###
+disqus:
+  shortname: your-short-name-disqus # Your website Shortname on disqus
+
+### Analytics ###
+analytics:
+  enabled: false # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "acts"
+    values:
+      layout: "page"
+  # - scope:                                              # For Documentation Only
+  #     path: ""                                          # For Documentation Only
+  #     type: "elements"                                  # For Documentation Only
+  #   values:                                             # For Documentation Only
+  #     layout: "element"                                 # For Documentation Only
+  # - scope:
+  #     path: ""
+  #     type: "posts"
+  #   values:
+  #     comments: false                                   # Set to true to enable disqus comments
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
